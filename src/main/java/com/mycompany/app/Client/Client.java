@@ -8,8 +8,8 @@ import java.net.*;
 
 public class Client {
     /**
-     *  main method
-     *  accepts a connection, receives a message from client then sends an echo to the client
+     * main method
+     * accepts a connection, receives a message from client then sends an echo to the client
      **/
     public static void main(String[] args) {
 
@@ -28,24 +28,22 @@ public class Client {
             echoSocket = new Socket(args[0], Integer.parseInt(args[1]));
             socIn = new BufferedReader(
                     new InputStreamReader(echoSocket.getInputStream()));
-            socOut= new PrintStream(echoSocket.getOutputStream());
+            socOut = new PrintStream(echoSocket.getOutputStream());
             stdIn = new BufferedReader(new InputStreamReader(System.in));
         } catch (UnknownHostException e) {
             System.err.println("Don't know about host:" + args[0]);
             System.exit(1);
         } catch (IOException e) {
             System.err.println("Couldn't get I/O for "
-                    + "the connection to:"+ args[0]);
+                    + "the connection to:" + args[0]);
             System.exit(1);
         }
 
-        SenderThread ct2 = new SenderThread(stdIn,socOut);
+        SenderThread ct2 = new SenderThread(stdIn, socOut);
         ListenerThreads ct3 = new ListenerThreads(socIn);
         ct2.start();
         ct3.start();
-
-
     }
-}
 
+}
 
