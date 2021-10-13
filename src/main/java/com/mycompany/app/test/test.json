@@ -1,0 +1,7 @@
+{"type": "Entry","value": "room1"}
+{"type": "Msg","value": "Salut la room 1 ca va?"}
+
+{"type": "Entry","value": "room2"}
+
+{"type": "Msg","value": "Salut la room 2 ca va?"}
+{"type": "eMsg","value": "Salut la room 2 ca va?"}
