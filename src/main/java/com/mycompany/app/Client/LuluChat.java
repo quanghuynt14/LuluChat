@@ -35,16 +35,17 @@ public class LuluChat {
     }
 
     public static void main(String[] args){
-        if (args.length != 3) {
-            System.out.println("Usage: java EchoClient <EchoServer host> <EchoServer port> <EchoServer salle>");
+
+        if (args.length != 2) {
+            System.out.println("Usage: java EchoClient <EchoServer host> <EchoServer port>");
             System.exit(1);
         }
 
         Layout layout = new Layout();
-        layout.init();
+
         if (! checkConnecion(args[0],args[1])){
             layout.printErrormsg();
-        };
+        }
 
     }
 

@@ -1,5 +1,7 @@
 package com.mycompany.app.Message;
 
+import java.util.Observable;
+
 public class Message {
     private final String type;
     private final String value;
@@ -10,6 +12,7 @@ public class Message {
         this.value = value;
         this.destination = destination;
     }
+
 
     public String getType() {
         return type;
