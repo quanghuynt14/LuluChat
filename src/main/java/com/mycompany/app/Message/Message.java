@@ -1,9 +1,9 @@
 package com.mycompany.app.Message;
 
 public class Message {
-    private String type;
-    private String value;
-    private String destination;
+    private final String type;
+    private final String value;
+    private final String destination;
 
     public Message(String type, String value, String destination) {
         this.type = type;
@@ -17,10 +17,6 @@ public class Message {
 
     public String getValue() {
         return value;
-    }
-
-    public String getDestination() {
-        return destination;
     }
 
     @Override

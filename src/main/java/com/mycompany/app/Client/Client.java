@@ -6,18 +6,14 @@ import com.mycompany.app.Client.threads.SenderThread;
 import java.io.*;
 import java.net.*;
 
-
-
 public class Client {
-
-
     /**
      *  main method
      *  accepts a connection, receives a message from client then sends an echo to the client
      **/
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        Socket echoSocket = null;
+        Socket echoSocket;
         PrintStream socOut = null;
         BufferedReader stdIn = null;
         BufferedReader socIn = null;
@@ -29,7 +25,7 @@ public class Client {
 
         try {
             // creation socket ==> connexion
-            echoSocket = new Socket(args[0],new Integer(args[1]).intValue());
+            echoSocket = new Socket(args[0], Integer.parseInt(args[1]));
             socIn = new BufferedReader(
                     new InputStreamReader(echoSocket.getInputStream()));
             socOut= new PrintStream(echoSocket.getOutputStream());
