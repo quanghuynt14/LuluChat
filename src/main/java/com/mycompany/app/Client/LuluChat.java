@@ -1,6 +1,7 @@
 package com.mycompany.app.Client;
 
-import com.mycompany.app.Client.GUI.Layout;
+import com.mycompany.app.Client.GUI.ConnectingGUI;
+import com.mycompany.app.Client.GUI.MainLayout;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -37,16 +38,16 @@ public class LuluChat {
     }
 
     public static void main(String[] args){
-
         if (args.length != 2) {
             System.out.println("Usage: java EchoClient <EchoServer host> <EchoServer port>");
             System.exit(1);
         }
+        final MainLayout mainLayout = new MainLayout();
 
-        Layout layout = new Layout();
-
+        System.out.println("gvy");
         if (! checkConnecion(args[0],args[1])){
-            layout.printErrormsg();
+            System.out.println("sded");
+            mainLayout.print_error_msg("ConnectError");
         }
 
     }
