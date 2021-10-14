@@ -11,15 +11,17 @@ public class MainLayout {
 
     private JTextField textField1;
     private JDialog errorDialog;
-    private ConnectingGUI my_connectingGUI;
     private JFrame frame;
 
+    private ConnectingGUI my_connectingGUI;
+    private NameChooser my_nameChooser;
 
     public MainLayout() {
         frame = new JFrame("LuluChat");
+        errorDialog = new JDialog(frame);
 
         my_connectingGUI = new ConnectingGUI();
-        errorDialog = new JDialog(frame);
+        my_nameChooser = new NameChooser();
 
         textField1.addActionListener(new ActionListener() {
             @Override
@@ -40,7 +42,6 @@ public class MainLayout {
     }
 
     public void print_error_msg(String type) {
-
         switch (type) {
             case "ConnectError":
                 System.out.println("ere");
@@ -60,6 +61,19 @@ public class MainLayout {
             default:
                 break;
         }
+    }
+
+    public void rm_modal() {
+        errorDialog.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
+    }
+
+    public void sh_user_name() {
+        System.out.println("zds");
+        frame.add(my_nameChooser.getPanel1());
+
+        //frame.setSize(new Dimension(200, 300));
+        frame.setVisible(true);
+
     }
 
     {

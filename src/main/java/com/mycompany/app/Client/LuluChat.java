@@ -44,13 +44,20 @@ public class LuluChat {
         }
         final MainLayout mainLayout = new MainLayout();
 
-        System.out.println("gvy");
+        // Verify Connexion
         if (! checkConnecion(args[0],args[1])){
             System.out.println("sded");
             mainLayout.print_error_msg("ConnectError");
+        }else{
+            mainLayout.rm_modal();
         }
 
+        //Ask user Username
+        mainLayout.sh_user_name();
+
+
     }
+
 
 
 }
