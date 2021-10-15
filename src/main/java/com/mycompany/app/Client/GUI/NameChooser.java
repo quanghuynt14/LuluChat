@@ -1,11 +1,15 @@
 package com.mycompany.app.Client.GUI;
 
+
+import com.google.gson.JsonObject;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Observable;
 
-public class NameChooser {
+public class NameChooser extends Observable {
     private JTextField textField1;
 
     public JPanel getPanel1() {
@@ -16,10 +20,16 @@ public class NameChooser {
 
     public NameChooser() {
         textField1.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println(textField1.getText());
+                JsonObject json = new JsonObject();
+                json.addProperty("type", "nameChange");
+                json.addProperty("value", textField1.getText());
+                //send Info to MainLayout
+                setChanged();
+                notifyObservers(json);
+
             }
         });
     }

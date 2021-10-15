@@ -17,15 +17,26 @@ public class Connexion extends Thread {
     private final Socket my_socket;
     private final String user_id;
     private final Manager my_manager;
+    private String my_username;
 
     public Connexion(Socket server_socket, Manager my_manager) {
         this.my_socket = server_socket;
         this.user_id = UUID.randomUUID().toString();
         this.my_manager = my_manager;
+        my_username = null;
     }
+    public void setUsername(String value){
+        this.my_username = value;
+    }
+
 
     public String getUser_id() {
         return user_id;
+    }
+
+    public String getMy_username() {
+        String return_value = my_username!=null ?  my_username :  "Private person";
+        return return_value;
     }
 
     public void debug_print(String message, String Color) {

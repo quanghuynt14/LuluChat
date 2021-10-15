@@ -77,6 +77,10 @@ public class Action extends Thread {
                     debug_print("Detect Message of type `BadJson`", "cyan");
                     my_manager.send_pv_msg(my_connexion, msg.getValue());
                     break;
+                case "nameChange":
+                    debug_print("Detect Message of type `nameChange`", "cyan");
+                    my_manager.changeName(my_connexion,msg.getValue());
+                    break;
                 default:
                     debug_print("Unknown Type of type Message", "yellow");
                     my_manager.send_pv_msg(my_connexion, "Unknown Message Type");

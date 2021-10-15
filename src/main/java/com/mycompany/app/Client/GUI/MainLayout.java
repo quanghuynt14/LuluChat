@@ -1,17 +1,45 @@
 package com.mycompany.app.Client.GUI;
 
+import com.google.gson.JsonObject;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+import java.util.Observable;
+import java.util.Observer;
 import java.util.concurrent.TimeUnit;
 
-public class MainLayout {
+public class MainLayout extends Observable implements Observer {
 
     private JTextField textField1;
     private JDialog errorDialog;
     private JFrame frame;
+
+    @Override
+    public void update(Observable o, Object arg) {
+        try {
+            JsonObject json = (JsonObject) arg;
+            String type = json.get("type").getAsString();
+            System.out.println(type);
+
+            switch (type) {
+                case "nameChange":
+                    System.out.println("MAin layout as receive nameChange" + json.get("value").getAsString());
+                    setChanged();
+                    notifyObservers(json);
+                    break;
+                default:
+                    throw new Exception("Unknown type");
+            }
+
+
+        } catch (Exception e) {
+            System.out.println("Unknown Exception : " + e);
+        }
+
+    }
 
     private ConnectingGUI my_connectingGUI;
     private NameChooser my_nameChooser;
@@ -63,12 +91,14 @@ public class MainLayout {
         }
     }
 
+
     public void rm_modal() {
         errorDialog.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
     }
 
     public void sh_user_name() {
         System.out.println("zds");
+        my_nameChooser.addObserver(this);
         frame.add(my_nameChooser.getPanel1());
 
         //frame.setSize(new Dimension(200, 300));
@@ -104,4 +134,6 @@ public class MainLayout {
         label2.setText("Choose a username");
         panel1.add(label2, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
+
+
 }

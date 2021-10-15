@@ -45,12 +45,15 @@ public class Manager {
         Map<String, Connexion> mapConnect = room_id_to_sockets.get(socket_id_to_room.get(my_connexion.getUser_id()));
         for (Map.Entry<String, Connexion> entry : mapConnect.entrySet()) {
             Connexion connexion = entry.getValue();
-            connexion.send_msg(msg);
+            connexion.send_msg(my_connexion.getMy_username()+" : "+ msg);
         }
+    }
+    public void changeName(Connexion my_connexion,String value) {
+        my_connexion.setUsername(value);
     }
 
     public void send_pv_msg(Connexion my_connexion, String msg) {
-        my_connexion.send_msg(msg);
+        my_connexion.send_msg(my_connexion.getMy_username()+" : "+ msg);
     }
 
     public void add_user(Connexion new_connexion) {
