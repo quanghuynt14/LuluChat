@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8134c6ce-f498-45b7-a929-1d56805cfc8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_tree_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_intellij_forms_rt_7_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jgoodies_forms_1_1_preview.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jdom_jdom_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/GUI/MainLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/GUI/MainLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Message/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/connexion/Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/connexion/Connexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/manager/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/ConnectingGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/ConnectingGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/NameChooser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/NameChooser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Message/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Message/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/connexion/Connexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/connexion/Connexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/manager/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mycompany/app/AppTest.class" beforeDir="false" />
-    </list>
+    <list default="true" id="8134c6ce-f498-45b7-a929-1d56805cfc8f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +114,7 @@
       <updated>1634299737318</updated>
       <workItem from="1634299738386" duration="3246000" />
       <workItem from="1634390912695" duration="3629000" />
-      <workItem from="1634413477419" duration="3763000" />
+      <workItem from="1634413477419" duration="4065000" />
     </task>
     <servers />
   </component>
