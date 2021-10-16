@@ -5,51 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8134c6ce-f498-45b7-a929-1d56805cfc8f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_tree_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_intellij_forms_rt_7_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jgoodies_forms_1_1_preview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jdom_jdom_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/GUI/MainLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/GUI/MainLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/GUI/NameChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/GUI/NameChooser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/LuluChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/LuluChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/threads/SenderThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/threads/SenderThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Message/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/connexion/Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/connexion/Connexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/manager/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/ErrorAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/ErrorAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/ConnectingGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/ConnectingGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/LuluChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/LuluChat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/threads/ListenerThreads.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/threads/ListenerThreads.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/threads/SenderThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/threads/SenderThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/NameChooser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/NameChooser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Message/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Message/Message.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/actions/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/actions/Action.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/connexion/Connexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/connexion/Connexion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/manager/Manager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/test/Montest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/test/Montest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my-app-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/my-app-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mycompany/app/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mycompany/app/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mycompany/app/AppTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +58,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.my-app [clean,compile,assembly:single]">
+    <configuration name="APP" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.Client.LuluChat" />
+      <module name="my-app" />
+      <option name="PROGRAM_PARAMETERS" value="localhost 1232" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LuluChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.app.Client.LuluChat" />
       <module name="my-app" />
@@ -100,6 +100,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="my-app [clean,compile,assembly:single]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="compile" />
+                <option value="assembly:single" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.APP" />
+      <item itemvalue="Application.LuluChat" />
+      <item itemvalue="Maven.my-app [clean,compile,assembly:single]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.LuluChat" />
@@ -114,7 +146,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634299737318</updated>
-      <workItem from="1634299738386" duration="914000" />
+      <workItem from="1634299738386" duration="3246000" />
+      <workItem from="1634390912695" duration="3629000" />
+      <workItem from="1634413477419" duration="3763000" />
     </task>
     <servers />
   </component>
@@ -131,6 +165,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

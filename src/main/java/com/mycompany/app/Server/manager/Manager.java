@@ -1,5 +1,6 @@
 package com.mycompany.app.Server.manager;
 
+import com.mycompany.app.Message.Message;
 import com.mycompany.app.Server.connexion.Connexion;
 
 import java.util.HashMap;
@@ -45,7 +46,11 @@ public class Manager {
         Map<String, Connexion> mapConnect = room_id_to_sockets.get(socket_id_to_room.get(my_connexion.getUser_id()));
         for (Map.Entry<String, Connexion> entry : mapConnect.entrySet()) {
             Connexion connexion = entry.getValue();
-            connexion.send_msg(my_connexion.getMy_username()+" : "+ msg);
+            if (connexion.getUser_id()==my_connexion.getUser_id()){
+                connexion.send_msg(new Message("MsgSent",msg));
+            }else {
+                connexion.send_msg(new Message("MsgReceive",msg));
+            }
         }
     }
     public void changeName(Connexion my_connexion,String value) {
@@ -54,6 +59,9 @@ public class Manager {
 
     public void send_pv_msg(Connexion my_connexion, String msg) {
         my_connexion.send_msg(my_connexion.getMy_username()+" : "+ msg);
+    }
+    public void send_pv_userId(Connexion my_connexion, String msg) {
+        my_connexion.send_msg(new Message("userId",msg));
     }
 
     public void add_user(Connexion new_connexion) {

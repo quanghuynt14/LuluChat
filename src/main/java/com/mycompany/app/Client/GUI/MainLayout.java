@@ -29,6 +29,8 @@ public class MainLayout extends Observable implements Observer {
                     System.out.println("MAin layout as receive nameChange" + json.get("value").getAsString());
                     setChanged();
                     notifyObservers(json);
+                    frame.remove(my_nameChooser.getPanel1());
+                    frame.setVisible(true);
                     break;
                 default:
                     throw new Exception("Unknown type");

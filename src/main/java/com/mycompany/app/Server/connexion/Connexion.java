@@ -122,5 +122,15 @@ public class Connexion extends Thread {
             debug_print("Error in Server" + e, "red");
         }
     }
+    public void send_msg(Message message) {
+        try {
+            PrintStream socOut = new PrintStream(this.my_socket.getOutputStream(), true);
+            String jsonInString = new Gson().toJson(message);
+            System.out.println(jsonInString);
+            socOut.println(jsonInString);
+        } catch (Exception e) {
+            debug_print("Error in Server" + e, "red");
+        }
+    }
 }
 

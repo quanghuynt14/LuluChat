@@ -38,6 +38,7 @@ public class Server {
                 //create a connexion object and add to server_list
                 Connexion new_connexion = new Connexion(clientSocket, server.getMy_manager());
                 server.getMy_manager().add_user(new_connexion);
+                server.getMy_manager().send_pv_userId(new_connexion,new_connexion.getUser_id());
                 new_connexion.start();
             }
         } catch (Exception e) {

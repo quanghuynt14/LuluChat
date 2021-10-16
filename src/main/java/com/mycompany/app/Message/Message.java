@@ -12,6 +12,13 @@ public class Message {
         this.value = value;
         this.destination = destination;
     }
+    public Message(String type, String value) {
+        this.type = type;
+        this.value = value;
+        this.destination = null;
+    }
+
+
 
 
     public String getType() {
