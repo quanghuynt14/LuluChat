@@ -18,8 +18,8 @@ public class Client {
         BufferedReader stdIn = null;
         BufferedReader socIn = null;
 
-        if (args.length != 3) {
-            System.out.println("Usage: java EchoClient <EchoServer host> <EchoServer port> <EchoServer salle>");
+        if (args.length != 2) {
+            System.out.println("Usage: java EchoClient <EchoServer host> <EchoServer port>");
             System.exit(1);
         }
 

@@ -83,7 +83,7 @@ public class Action extends Thread {
                     break;
                 case "nameChange":
                     debug_print("Detect Message of type `nameChange`", "cyan");
-                    my_manager.changeName(my_connexion,msg.getValue());
+                    my_manager.change_name(my_connexion,msg.getValue());
                     break;
                 default:
                     debug_print("Unknown Type of type Message", "yellow");

@@ -5,12 +5,13 @@ import com.mycompany.app.Server.manager.Manager;
 
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.SQLException;
 
 public class Server {
 
     private final Manager my_manager;
 
-    public Server() {
+    public Server() throws SQLException {
         this.my_manager = new Manager();
     }
 
@@ -18,7 +19,7 @@ public class Server {
         return my_manager;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
         Server server = new Server();
         ServerSocket listenSocket;

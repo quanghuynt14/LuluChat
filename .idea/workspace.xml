@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8134c6ce-f498-45b7-a929-1d56805cfc8f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/connexion/Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/connexion/Connexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/manager/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/ErrorAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/ErrorAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/ConnectingGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/ConnectingGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/MainLayout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/NameChooser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/NameChooser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/NameChooser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/GUI/NameChooser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/LuluChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/LuluChat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/threads/ListenerThreads.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/threads/ListenerThreads.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/threads/SenderThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/threads/SenderThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Message/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Message/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/actions/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/actions/Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/connexion/Connexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/connexion/Connexion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Server/manager/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/test/Montest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/test/Montest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +146,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

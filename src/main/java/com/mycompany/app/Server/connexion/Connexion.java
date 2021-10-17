@@ -97,13 +97,13 @@ public class Connexion extends Thread {
                     if (msg == null) {
                         throw new IllegalArgumentException("Detected an empty msg");
                     }
+                    Action action = new Action(msg, this, my_manager);
+                    action.start();
                 } catch (JsonSyntaxException | IllegalArgumentException e) {
                     debug_print("Not a good Json file detected: " + e.getMessage(), "yellow");
                     msg = new Message("BadJson", "Little Dickhead, please send a correct message, not :" + line,
                             null);
                 }
-                Action action = new Action(msg, this, my_manager);
-                action.start();
             }
             my_socket.close();
             socIn.close();
