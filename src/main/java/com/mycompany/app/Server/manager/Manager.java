@@ -33,6 +33,16 @@ public class Manager {
             HashMap<String, Connexion> connexions = new HashMap<>();
             connexions.put(client_connexion.getUser_id(), client_connexion);
             room_id_to_sockets.put(id_room, connexions);
+
+            for (Map.Entry<String, Map<String,Connexion>> entry : room_id_to_sockets.entrySet()) {
+                Map<String,Connexion> my_map= entry.getValue();
+                for (Map.Entry<String, Connexion> entry2 : my_map.entrySet()) {
+                    Connexion conn = entry2.getValue();
+                    getAllRoom(conn);
+                }
+
+            }
+
         } else {
             room_id_to_sockets.get(id_room).put(client_connexion.getUser_id(), client_connexion);
         }
