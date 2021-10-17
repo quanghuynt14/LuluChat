@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8134c6ce-f498-45b7-a929-1d56805cfc8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_36_0_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/actions/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/connexion/Connexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/connexion/Connexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/manager/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Server/manager/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/app/Client/Client.class" afterDir="false" />

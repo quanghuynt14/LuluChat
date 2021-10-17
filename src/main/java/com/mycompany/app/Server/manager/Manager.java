@@ -1,9 +1,11 @@
 package com.mycompany.app.Server.manager;
 
+import com.google.gson.Gson;
 import com.mycompany.app.Message.Message;
 import com.mycompany.app.Server.connexion.Connexion;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -38,6 +40,15 @@ public class Manager {
             HashMap<String, Connexion> connexions = new HashMap<>();
             connexions.put(client_connexion.getUser_id(), client_connexion);
             room_id_to_sockets.put(id_room, connexions);
+
+            for (Map.Entry<String, Map<String,Connexion>> entry : room_id_to_sockets.entrySet()) {
+                Map<String,Connexion> my_map= entry.getValue();
+                for (Map.Entry<String, Connexion> entry2 : my_map.entrySet()) {
+                    Connexion conn = entry2.getValue();
+                    getAllRoom(conn);
+                }
+
+            }
         } else {
             room_id_to_sockets.get(id_room).put(client_connexion.getUser_id(), client_connexion);
         }
@@ -50,9 +61,24 @@ public class Manager {
 
         // retrieve message from database
         retrieve_messages(id_room, client_connexion);
+
     }
 
-
+    public void getAllRoom(Connexion my_connexion) {
+        Gson g = new Gson();
+        Map <String , ArrayList> mymap= new HashMap<>();
+        mymap.put("value",new ArrayList<String>());
+        System.out.println(room_id_to_sockets.entrySet());
+        for (Map.Entry<String, Map<String,Connexion>> entry : room_id_to_sockets.entrySet()) {
+            String connexion = entry.getKey();
+            mymap.get("value").add(connexion);
+        }
+        String jsonString = g.toJson(mymap.get("value"));
+        Message msg =new Message("ListRoom",jsonString);
+        String final_json = g.toJson(msg);
+        my_connexion.send_msg(final_json);
+        System.out.println(final_json);
+    }
     public void send_msg(Connexion my_connexion, String msg) throws SQLException {
         // save msg to database
         save_message(my_connexion, msg);
