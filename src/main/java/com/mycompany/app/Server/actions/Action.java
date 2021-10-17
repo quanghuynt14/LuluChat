@@ -77,6 +77,10 @@ public class Action extends Thread {
                     debug_print("Detect Message of type `BadJson`", "cyan");
                     my_manager.send_pv_msg(my_connexion, msg.getValue());
                     break;
+                case "getAllRoom":
+                    debug_print("Detect Message of type `getAllRoom`", "cyan");
+                    my_manager.getAllRoom(my_connexion);
+                    break;
                 case "nameChange":
                     debug_print("Detect Message of type `nameChange`", "cyan");
                     my_manager.changeName(my_connexion,msg.getValue());

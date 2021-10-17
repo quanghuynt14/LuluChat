@@ -1,10 +1,10 @@
 package com.mycompany.app.Server.manager;
 
+import com.google.gson.Gson;
 import com.mycompany.app.Message.Message;
 import com.mycompany.app.Server.connexion.Connexion;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Manager {
     private final Map<String, String> socket_id_to_room;
@@ -52,6 +52,18 @@ public class Manager {
                 connexion.send_msg(new Message("MsgReceive",msg));
             }
         }
+    }
+    public void getAllRoom(Connexion my_connexion) {
+        Gson g = new Gson();
+        Map <String , ArrayList> mymap= new HashMap<>();
+        mymap.put("list",new ArrayList<String>());
+        System.out.println(room_id_to_sockets.entrySet());
+        for (Map.Entry<String, Map<String,Connexion>> entry : room_id_to_sockets.entrySet()) {
+            String connexion = entry.getKey();
+            mymap.get("list").add(connexion);
+        }
+        String jsonString = g.toJson(mymap);
+        System.out.println(jsonString);
     }
     public void changeName(Connexion my_connexion,String value) {
         my_connexion.setUsername(value);
