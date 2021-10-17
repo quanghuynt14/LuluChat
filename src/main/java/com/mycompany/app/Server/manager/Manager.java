@@ -12,6 +12,7 @@ import java.util.Objects;
 
 public class Manager {
     private final Map<String, String> socket_id_to_room;
+    private final ArrayList<Connexion> list_conn;
     private final Map<String, Map<String, Connexion>> room_id_to_sockets;
 
     private final String jdbcUrl = "jdbc:sqlite:luluchat.db";
@@ -20,6 +21,8 @@ public class Manager {
     public Manager() throws SQLException {
         this.socket_id_to_room = new HashMap<>();
         this.room_id_to_sockets = new HashMap<>();
+        this.list_conn = new ArrayList<>();
+
         this.retrieve_old_all_tables();
     }
 
@@ -42,14 +45,9 @@ public class Manager {
             connexions.put(client_connexion.getUser_id(), client_connexion);
             room_id_to_sockets.put(id_room, connexions);
 
-            for (Map.Entry<String, Map<String,Connexion>> entry : room_id_to_sockets.entrySet()) {
-                Map<String,Connexion> my_map= entry.getValue();
-                for (Map.Entry<String, Connexion> entry2 : my_map.entrySet()) {
-                    Connexion conn = entry2.getValue();
-                    getAllRoom(conn);
-                }
-
-            }
+            this.list_conn.forEach((con)->{
+                getAllRoom(con);
+            });
         } else {
             room_id_to_sockets.get(id_room).put(client_connexion.getUser_id(), client_connexion);
         }
@@ -107,6 +105,7 @@ public class Manager {
 
     public void add_user(Connexion new_connexion) {
         socket_id_to_room.put(new_connexion.getUser_id(), null);
+        list_conn.add(new_connexion);
     }
 
     public void create_table_if_not_exists(String id_room) throws SQLException {
