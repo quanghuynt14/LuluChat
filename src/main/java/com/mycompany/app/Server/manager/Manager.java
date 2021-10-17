@@ -56,14 +56,18 @@ public class Manager {
     public void getAllRoom(Connexion my_connexion) {
         Gson g = new Gson();
         Map <String , ArrayList> mymap= new HashMap<>();
-        mymap.put("list",new ArrayList<String>());
+        mymap.put("value",new ArrayList<String>());
         System.out.println(room_id_to_sockets.entrySet());
         for (Map.Entry<String, Map<String,Connexion>> entry : room_id_to_sockets.entrySet()) {
             String connexion = entry.getKey();
-            mymap.get("list").add(connexion);
+            mymap.get("value").add(connexion);
         }
-        String jsonString = g.toJson(mymap);
-        System.out.println(jsonString);
+        String jsonString = g.toJson(mymap.get("value"));
+        Message msg =new Message("ListRoom",jsonString);
+
+        String final_json = g.toJson(msg);
+        my_connexion.send_msg(final_json);
+        System.out.println(final_json);
     }
     public void changeName(Connexion my_connexion,String value) {
         my_connexion.setUsername(value);
