@@ -20,6 +20,7 @@ public class Manager {
     public Manager() throws SQLException {
         this.socket_id_to_room = new HashMap<>();
         this.room_id_to_sockets = new HashMap<>();
+        this.retrieve_old_all_tables();
     }
 
     public Map<String, String> getSocket_id_to_room() {
@@ -119,25 +120,47 @@ public class Manager {
 
         System.out.println("Table " + id_room + " ok");
     }
+    public void retrieve_old_all_tables() throws SQLException {
+        ResultSet rs = connection.getMetaData().getTables(null, null, null, null);
+        while (rs.next()) {
+            System.out.println(rs.getString("TABLE_NAME"));
+            String tablesname= rs.getString("TABLE_NAME");
+            HashMap<String, Connexion> connexions = new HashMap<>();
+            room_id_to_sockets.put(tablesname,connexions);
+        }
+
+    }
 
     public void retrieve_messages(String id_room, Connexion client_connexion) throws SQLException {
-        String sql = "SELECT * FROM " + id_room;
+        String sql = "SELECT * FROM " + id_room ;
+        sql += " ORDER BY created_at";
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(sql);
-
+        ArrayList<Map<String,String>> finallist= new ArrayList<Map<String,String>>();
         while (resultSet.next()) {
             int message_id = resultSet.getInt("message_id");
             String sender_id = resultSet.getString("sender_id");
             String content = resultSet.getString("content");
             Date created_at = resultSet.getDate("created_at");
-
+            Map<String,String> message = new HashMap<>();
+            message.put("msg",content);
+            message.put("from",sender_id);
+            finallist.add(message);
             System.out.println(message_id + " | " + sender_id + " | " + content + " | " + created_at);
         }
+        Gson g= new Gson();
+        String jsonString = g.toJson(finallist);
+        Message msg =new Message("AllMessage",jsonString);
+        String final_json = g.toJson(msg);
+        client_connexion.send_msg(final_json);
+        System.out.println(final_json);
+
+
     }
 
     public void save_message(Connexion my_connexion, String msg) throws SQLException {
         String sql = "INSERT INTO " + socket_id_to_room.get(my_connexion.getUser_id()) + " (sender_id, content, created_at) VALUES ";
-        sql += " ('" + my_connexion.getUser_id() + "', ";
+        sql += " ('" + my_connexion.getMy_username() + "', ";
         sql += "'" + msg + "', ";
         sql += "datetime());";
         Statement statement = connection.createStatement();
