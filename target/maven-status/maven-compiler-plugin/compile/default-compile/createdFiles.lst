@@ -1,0 +1,17 @@
+com/mycompany/app/test/Montest.class
+com/mycompany/app/Server/Server.class
+com/mycompany/app/App.class
+com/mycompany/app/Client/Client.class
+com/mycompany/app/Client/GUI/ConnectingGUI.class
+com/mycompany/app/Client/LuluChat.class
+com/mycompany/app/Server/actions/Action.class
+com/mycompany/app/Server/connexion/Connexion.class
+com/mycompany/app/Server/manager/Manager.class
+com/mycompany/app/Client/ErrorAction.class
+com/mycompany/app/Client/GUI/NameChooser.class
+com/mycompany/app/Message/Message.class
+com/mycompany/app/Client/threads/ListenerThreads.class
+com/mycompany/app/Client/GUI/MainLayout.class
+com/mycompany/app/Client/threads/SenderThread.class
+com/mycompany/app/Client/GUI/NameChooser$1.class
+com/mycompany/app/Client/GUI/MainLayout$1.class

@@ -22,8 +22,22 @@ public class Manager {
         this.socket_id_to_room = new HashMap<>();
         this.room_id_to_sockets = new HashMap<>();
         this.list_conn = new ArrayList<>();
-
         this.retrieve_old_all_tables();
+    }
+    public void remove_connexion(Connexion my_connec){
+        String connectId = my_connec.getUser_id();
+        String roomId = socket_id_to_room.get(connectId);
+
+        //remove socket from his room
+        if (roomId!=null){
+            Map<String, Connexion> listofpart = room_id_to_sockets.get(roomId);
+            listofpart.remove(connectId);
+        }
+        //remove socket from list socket
+        list_conn.remove(my_connec);
+        //remove socket from soketIdtoRoom
+        socket_id_to_room.remove(my_connec.getUser_id());
+
     }
 
     public Map<String, String> getSocket_id_to_room() {
@@ -67,7 +81,6 @@ public class Manager {
         Gson g = new Gson();
         Map <String , ArrayList> mymap= new HashMap<>();
         mymap.put("value",new ArrayList<String>());
-        System.out.println(room_id_to_sockets.entrySet());
         for (Map.Entry<String, Map<String,Connexion>> entry : room_id_to_sockets.entrySet()) {
             String connexion = entry.getKey();
             mymap.get("value").add(connexion);
@@ -76,7 +89,6 @@ public class Manager {
         Message msg =new Message("ListRoom",jsonString);
         String final_json = g.toJson(msg);
         my_connexion.send_msg(final_json);
-        System.out.println(final_json);
     }
     public void send_msg(Connexion my_connexion, String msg) throws SQLException {
         // save msg to database
@@ -116,13 +128,10 @@ public class Manager {
         sql += " created_at DATETIME);";
         Statement statement = connection.createStatement();
         statement.executeUpdate(sql);
-
-        System.out.println("Table " + id_room + " ok");
     }
     public void retrieve_old_all_tables() throws SQLException {
         ResultSet rs = connection.getMetaData().getTables(null, null, null, null);
         while (rs.next()) {
-            System.out.println(rs.getString("TABLE_NAME"));
             String tablesname= rs.getString("TABLE_NAME");
             HashMap<String, Connexion> connexions = new HashMap<>();
             room_id_to_sockets.put(tablesname,connexions);
@@ -145,16 +154,12 @@ public class Manager {
             message.put("msg",content);
             message.put("from",sender_id);
             finallist.add(message);
-            System.out.println(message_id + " | " + sender_id + " | " + content + " | " + created_at);
         }
         Gson g= new Gson();
         String jsonString = g.toJson(finallist);
         Message msg =new Message("AllMessage",jsonString);
         String final_json = g.toJson(msg);
         client_connexion.send_msg(final_json);
-        System.out.println(final_json);
-
-
     }
 
     public void save_message(Connexion my_connexion, String msg) throws SQLException {

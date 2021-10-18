@@ -107,6 +107,7 @@ public class Connexion extends Thread {
             }
             my_socket.close();
             socIn.close();
+            my_manager.remove_connexion(this);
             debug_print("End of Connexion.Class Main Thread", "green");
 
         } catch (Exception e) {
