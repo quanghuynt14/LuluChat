@@ -11,3 +11,7 @@ Compile with maven:
 Launch the server:
 
 `java -jar target/my-app-1.0-SNAPSHOT-jar-with-dependencies.jar $PORT`
+
+Main class
+
+com.mycompany.app.Server
